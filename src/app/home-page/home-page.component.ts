@@ -12,7 +12,7 @@ export class HomePageComponent implements OnInit {
 
   bookList:any;
  // totalBooks:number | undefined;
-  constructor(private bookService: BookStoreServiceService, private router : Router) { }
+  constructor(private bookService: BookStoreServiceService) { }
 
   ngOnInit(): void {
     this.bookService.getAllBooks().subscribe(res=>{
